@@ -1,0 +1,225 @@
+<!-- Opção para complemento de cadastro -->
+<nav class="navbar">
+    <div class="navbar-brand">
+      <img class="navbar-brand-logo" src="assets/icons/logo-icon.svg" alt="">
+      <button class="navbar-brand-back">
+        <span class="navbar-brand-back-label">Voltar&nbsp;<span class="hidden-tablet">o para perfil</span></span>
+      </button>
+      <div class="navbar-info">
+        <div class="navbar-info-image">
+          <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="circularProgress --50">
+          <div class="circularProgress__overlay">
+            <span class="circularProgress__text">50%</span>
+          </div>
+        </div>
+        <div class="navbar-info-text">
+          <h1 class="h5 navbar-info-title-1">
+            Inscrição: Programa de Estágio TÉCNICO Unipar 2022
+          </h1>
+          <h5 class="small navbar-info-title-2">
+            Última atualização:
+          </h5>
+
+        </div>
+      </div>
+    </div>
+    <div class="navbar-extra">
+      <div class="navbar-extra-lang">
+      </div>
+      <!-- <button class="btn btn-sm btn-primary">
+        <img src="assets/icons/edit.svg" alt="" class="btn-icon">
+        <span>Editar perfil&nbsp;<span class="hidden-tablet"> completo</span></span>
+      </button> -->
+    </div>
+    <div class="navbar-menu-mobile">
+      <input id="menu-mobile-btn" class="menu-mobile-btn" type="checkbox" id="menu-mobile-btn" />
+      <label class="menu-mobile-icon" for="menu-mobile-btn"><span class="navicon"></span></label>
+      <div class="main-nav main-nav-mobile">
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item is-success" data-link="objetivos_e_interesses">
+            <img src="assets/icons/objetivos.svg" alt="">
+            Objetivos e Interesses
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item is-danger" data-link="dados_basicos">
+            <img src="assets/icons/dados-basicos.svg" alt="">
+            Dados básicos
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="dados_complementares">
+            <img src="assets/icons/dados-complementares.svg" alt="">
+            Dados complementares
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="jornada">
+            <img src="assets/icons/jornadas.svg" alt="">
+            Jornada - Gestão de projetos
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="diversidade">
+            <img src="assets/icons/diversidade.svg" alt="">
+            Diversidade
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="formacao">
+            <img src="assets/icons/formacao.svg" alt="">
+            Formação
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="tecnologias_e_habilidades">
+            <img src="assets/icons/hardskills.svg" alt="">
+            Tecnologias e habilidades
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="experiencias_e_atividades">
+            <img src="assets/icons/experiencia-profissional.svg" alt="">
+            Experiência & Atividades
+          </label>
+        </div>
+        <!-- Nav Item -->
+        <div class="main-nav_group">
+          <label class="main-nav_item" data-link="extra_questions">
+            <img src="assets/icons/extra-questions.svg" alt="">
+            Perguntas específicas
+          </label>
+        </div>
+      </div>
+    </div>
+</nav>
+<!-- Opção para preenchimento de perfil -->
+<nav class="navbar d-none">
+  <div class="navbar-brand">
+    <img class="navbar-brand-logo" src="assets/icons/logo-icon.svg" alt="">
+    <button class="navbar-brand-back">
+      <span class="navbar-brand-back-label">Voltar&nbsp;<span class="hidden-tablet">o para perfil</span></span>
+    </button>
+    <div class="navbar-info">
+      <div class="circularProgress --50">
+        <div class="circularProgress__overlay">
+          <span class="circularProgress__text">50%</span>
+        </div>
+      </div>
+      <div class="navbar-info-text">
+        <h1 class="h5 navbar-info-title-1">
+          Edição do perfil
+        </h1>
+
+      </div>
+    </div>
+  </div>
+  <div class="navbar-extra">
+    <div class="navbar-extra-lang">
+    </div>
+    <button class="btn btn-sm btn-primary">
+      <img src="assets/icons/edit.svg" alt="" class="btn-icon">
+      <span>Editar perfil&nbsp;<span class="hidden-tablet"> completo</span></span>
+    </button>
+  </div>
+  <div class="navbar-menu-mobile">
+    <input id="menu-mobile-btn" class="menu-mobile-btn" type="checkbox" id="menu-mobile-btn" />
+    <label class="menu-mobile-icon" for="menu-mobile-btn"><span class="navicon"></span></label>
+    <div class="main-nav main-nav-mobile">
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item is-success" data-link="objetivos_e_interesses">
+          <img src="assets/icons/objetivos.svg" alt="">
+          Objetivos e Interesses
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item is-danger" data-link="dados_basicos">
+          <img src="assets/icons/dados-basicos.svg" alt="">
+          Dados básicos
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="dados_complementares">
+          <img src="assets/icons/dados-complementares.svg" alt="">
+          Dados complementares
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="jornada">
+          <img src="assets/icons/jornadas.svg" alt="">
+          Jornada - Gestão de projetos
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="diversidade">
+          <img src="assets/icons/diversidade.svg" alt="">
+          Diversidade
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="formacao">
+          <img src="assets/icons/formacao.svg" alt="">
+          Formação
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="tecnologias_e_habilidades">
+          <img src="assets/icons/hardskills.svg" alt="">
+          Tecnologias e habilidades
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="experiencias_e_atividades">
+          <img src="assets/icons/experiencia-profissional.svg" alt="">
+          Experiência & Atividades
+        </label>
+      </div>
+      <!-- Nav Item -->
+      <div class="main-nav_group">
+        <label class="main-nav_item" data-link="extra_questions">
+          <img src="assets/icons/extra-questions.svg" alt="">
+          Perguntas específicas
+        </label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <script>
+    // Mobile Nav
+    $('#menu-mobile-btn').change(function(){
+      if ($(this).is(':checked')) {
+        $('body').css('overflow','hidden')
+      } else {
+        $('body').css('overflow','auto')
+      } 
+    });
+    // Navigation
+    $('.main-nav-mobile .main-nav_item').click(function(){
+      // Close mobile Nav
+      $('#menu-mobile-btn').prop( "checked", false );
+      // Load content
+        $.get("modules/" + $(this).attr("data-link") + ".html", function (data) {
+            $(".main-content").empty().prepend(data);
+        });
+    });
+  </script>
+  

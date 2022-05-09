@@ -1,0 +1,131 @@
+<nav class="main-nav">
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="objetivos_e_interesses" name="main-nav">
+      <label class="main-nav_item is-success" for="objetivos_e_interesses">
+        <img src="assets/icons/objetivos.svg" alt="">
+        Objetivos e Interesses
+      </label>
+      <div class="main-sub_nav">
+        <a href="#meus_objetivos" class="main-sub_nav_item">Objetivos</a>
+        <a href="#meus_interesses" class="main-sub_nav_item">Interesses</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="dados_basicos" name="main-nav">
+      <label class="main-nav_item is-danger" for="dados_basicos">
+        <img src="assets/icons/dados-basicos.svg" alt="">
+        Dados básicos
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item is-danger">Informações pessoais</a>
+        <a href="#" class="main-sub_nav_item">Números de contato</a>
+        <a href="#" class="main-sub_nav_item">Endereço</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="dados_complementares" name="main-nav">
+      <label class="main-nav_item" for="dados_complementares">
+        <img src="assets/icons/dados-complementares.svg" alt="">
+        Dados complementares
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Horário</a>
+        <a href="#" class="main-sub_nav_item">Viagem</a>
+        <a href="#" class="main-sub_nav_item">Mudança</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="jornada" name="main-nav">
+      <label class="main-nav_item" for="jornada">
+        <img src="assets/icons/jornadas.svg" alt="">
+        Jornada - Gestão de projetos
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Gestão de projetos</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="diversidade" name="main-nav">
+      <label class="main-nav_item" for="diversidade">
+        <img src="assets/icons/diversidade.svg" alt="">
+        Diversidade
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Identidade de gênero</a>
+        <a href="#" class="main-sub_nav_item">Orientação sexual</a>
+        <a href="#" class="main-sub_nav_item">Etnia</a>
+        <a href="#" class="main-sub_nav_item">Deficiência</a>
+        <a href="#" class="main-sub_nav_item">Renda</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="formacao" name="main-nav">
+      <label class="main-nav_item" for="formacao">
+        <img src="assets/icons/cursos.svg" alt="">
+        Formação
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Escolaridade</a>
+        <a href="#" class="main-sub_nav_item">Cursos livres</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="tecnologias_e_habilidades" name="main-nav">
+      <label class="main-nav_item" for="tecnologias_e_habilidades">
+        <img src="assets/icons/hardskills.svg" alt="">
+        Tecnologias e habilidades
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Idiomas</a>
+        <a href="#" class="main-sub_nav_item">Tecnologia - Hard Skills</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="experiencias_e_atividades" name="main-nav">
+      <label class="main-nav_item" for="experiencias_e_atividades">
+        <img src="assets/icons/experiencia-profissional.svg" alt="">
+        Experiência & Atividades
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Profissionais</a>
+        <a href="#" class="main-sub_nav_item">Atividades adicionais</a>
+      </div>
+    </div>
+    <!-- Nav Item -->
+    <div class="main-nav_group">
+      <input class="main-nav_input" type="radio" id="extra_questions" name="main-nav">
+      <label class="main-nav_item" for="extra_questions">
+        <img src="assets/icons/extra-questions.svg" alt="">
+        Perguntas específicas
+      </label>
+      <div class="main-sub_nav">
+        <a href="#" class="main-sub_nav_item">Pergunta 1</a>
+        <a href="#" class="main-sub_nav_item">Pergunta 2</a>
+      </div>
+    </div>
+  </nav>
+
+<script>
+$(document).ready(function(){
+    $.get("modules/extra_questions.html", function (data) {
+      $(".main-content").empty().prepend(data);
+    });
+    //$.get("modules/modal.html", function (data) {
+      //$("body").addClass("hasModal").append(data);
+    //});
+    $('input:radio[name="main-nav"]').change(function(){
+        console.log("test");
+        $.get("modules/" + $(this).attr("id") + ".html", function (data) {
+            $(".main-content").empty().prepend(data);
+        });
+    });
+})
+</script>

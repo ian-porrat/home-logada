@@ -1,0 +1,10 @@
+$viewport-mobile: 768px;
+$viewport-tablet: 956px;
+$viewport-laptop: 1024px;
+
+
+.hidden-tablet {
+    @media (max-width: $viewport-tablet) {
+        display: none;
+    }
+}
