@@ -1,5 +1,5 @@
 // $(function(){
-//     $("body").load("modules/navbar.html"); 
+//     $("body").prepend("modules/navbar.html"); 
 // });
 
 $(function () {

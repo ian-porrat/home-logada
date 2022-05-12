@@ -20,16 +20,21 @@ $neutral-900: #1A1A1A;
 $blue-main: #329CC5;
 $blue-dark: #225378;
 
+// Old Purple
+$purple-700: #6B2A86;
+
 // Gradient
 $gradient-blue: linear-gradient(90deg, #1B89B4 0%, #65C6EC 100%);
+$gradient-purple: linear-gradient(90deg, #500C80 0%, #654CBA 100%);
 $gradient-duocolor: linear-gradient(90deg, #5E32BA 0.52%, #1B89B4 100%);
 
 // State
 $info: #46AAED;
 $hover: #B3B6C7;
 $active: #46AAED;
-$danger: #FEAB0B;
-$success: #4CAF50;
+$error: #DA224E;
+$danger: #D9611E;
+$success: #3BB427;
 $locked: #728E9E;
 
 // State
